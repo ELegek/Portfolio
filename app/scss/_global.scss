@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -32,8 +34,13 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem
 }

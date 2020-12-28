@@ -1,0 +1,1 @@
+.portfolio{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -1rem 2.8rem}.portfolio__col{-ms-flex-preferred-size:33.3333333%;flex-basis:33.3333333%;padding:1rem}@media (max-width: 767px){.portfolio__col{-ms-flex-preferred-size:50%;flex-basis:50%}}@media (max-width: 565px){.portfolio__col{-ms-flex-preferred-size:100%;flex-basis:100%}}

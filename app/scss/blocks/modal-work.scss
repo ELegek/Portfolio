@@ -1,0 +1,91 @@
+.modal-work {
+    display: flex
+}
+
+.modal-work__preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden
+}
+
+.modal-work__content {
+    width: 35%;
+    padding: 3.4rem 6.6rem 1rem 1.73rem;
+    position: relative
+}
+
+.modal-work__header {
+    margin-bottom: 2.2rem
+}
+
+.modal-work__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0)
+}
+
+.modal-work__title {
+    font-size: 2.12rem;
+    color: #2B2A2C;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .2rem
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: #6A696B;
+    text-transform: uppercase
+}
+
+.modal-work__info-divider {
+    margin: 0 1rem
+}
+
+.modal-work__client-title {
+    font-size: 1.06rem;
+    color: #2B2A2C;
+    font-weight: 700
+}
+
+.modal-work__client-company {
+    font-size: .94rem;
+    font-style: italic;
+    color: #6A696B
+}
+
+.modal-work__text {
+    margin-bottom: 8.86rem;
+    font-size: .8rem;
+    line-height: 2;
+    color: #6A696B;
+    font-weight: 300
+}
+
+.modal-work__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%
+}
+
+.modal-work__btn {
+    font-size: .94rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer
+}
+
+.modal-work__btn:focus {
+    outline: 0
+}
