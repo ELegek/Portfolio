@@ -44,3 +44,69 @@ body {
     padding-left: 1rem;
     padding-right: 1rem
 }
+
+// Menu burger
+
+.header__burger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__burger-btn {
+    display: none;
+    border: none;
+    border-radius: 2px;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s linear .2s;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        top: -10px;
+        transition: transform .2s ease-in, top .2s linear .2s;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        transition: transform .2s ease-in, top .2s linear .2s;
+    }
+}
+
+.header__burger-btn.active {
+    background-color: transparent;
+    transition: all .2s linear;
+
+    &:before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: top .2s linear, transform .2s ease-in .2s;
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: top .2s linear, transform .2s ease-in .2s;
+    }
+}

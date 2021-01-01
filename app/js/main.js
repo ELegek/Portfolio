@@ -111,4 +111,11 @@ $(function () {
 
     nav.toggleClass("show");
   });
+
+
+  // Menu burger
+  document.querySelector('.header__burger').onclick = function () {
+    document.querySelector('.header__burger-btn').classList.toggle('active');
+    // document.querySelector('.menu__mobile-list').classList.toggle('active');
+  };
 });
