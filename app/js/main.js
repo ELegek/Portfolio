@@ -116,6 +116,6 @@ $(function () {
   // Menu burger
   document.querySelector('.header__burger').onclick = function () {
     document.querySelector('.header__burger-btn').classList.toggle('active');
-    // document.querySelector('.menu__mobile-list').classList.toggle('active');
+    document.querySelector('.mobile__menu-wrapper').classList.toggle('active');
   };
 });
