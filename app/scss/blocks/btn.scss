@@ -15,26 +15,27 @@
   border-radius: 1.8em;
   background: none;
   cursor: pointer;
-  transition: background-color .2s linear, color .2s linear, box-shadow .2s linear
+  transition: all .2s linear;
 }
 
 .btn:focus {
-  outline: none
+  outline: none;
 }
 
 .btn:hover {
   background-color: #2B2A2C;
   color: #fff;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24)
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
+  transform: translateY(-10%);
 }
 
 .btn+.btn {
-  margin-left: 1rem
+  margin-left: 1rem;
 }
 
 @media (max-width: 565px) {
   .btn+.btn {
-    margin: 0
+    margin: 0;
   }
 }
 
@@ -43,26 +44,26 @@
   font-size: .94rem;
   font-weight: 700;
   border-width: 2px;
-  min-width: 0
+  min-width: 0;
 }
 
 .btn--thin {
   min-width: 145px;
-  font-size: .8rem
+  font-size: .8rem;
 }
 
 @media (max-width: 991px) {
   .btn {
     font-size: 1rem;
     padding: 1rem 1.5rem;
-    min-width: 140px
+    min-width: 140px;
   }
 }
 
 @media (max-width: 565px) {
   .btn {
     display: block;
-    width: 100%
+    width: 100%;
   }
 
   .btn+.btn {
@@ -74,11 +75,11 @@
 @media (max-width: 767px) {
   .btn {
     display: block;
-    width: 100%
+    width: 100%;
   }
 
   .btn+.btn {
     margin-left: 0;
-    margin-top: 1rem
+    margin-top: 1rem;
   }
 }
