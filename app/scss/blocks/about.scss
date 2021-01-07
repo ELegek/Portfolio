@@ -1,3 +1,7 @@
+.about {
+    padding: 50px 0;
+}
+
 .about__inner {
     padding: 40px 0;
 }
@@ -39,4 +43,31 @@
         font-style: italic;
         font-weight: 600;
     }
+
+    a {
+        font-weight: 700;
+        text-decoration: underline;
+        transition: all .2s linear;
+
+        &:hover {
+            color: #057faf;
+        }
+    }
+}
+
+.about__stack {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #2B2A2C;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about__technologies {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: #057faf;
+    font-weight: 700;
+    font-size: 16px;
 }
