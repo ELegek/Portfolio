@@ -1,115 +1,42 @@
-.about {
-    margin: 8.4rem 0;
+.about__inner {
+    padding: 40px 0;
 }
 
-
-
-.about__inner {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1090px;
+.about__content {
+    text-align: center;
 }
 
 .about__title {
-    font-size: 3rem;
+    font-size: 32px;
+    font-weight: 700;
+    color: #057faf;
+    margin-bottom: 10px;
+}
+
+.about__subtitle {
+    font-size: 18px;
     color: #2B2A2C;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 60px;
+
+    span {
+        font-style: italic;
+        font-weight: 600;
+    }
 }
-
-
-
-.about__bigtitle {
-    position: relative;
-    left: -10px;
-    font-size: 6.1rem;
-    color: rgba(43, 42, 44, 0.15);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 1.4rem;
-    text-transform: uppercase;
-}
-
-
 
 .about__text {
-    font-size: .8rem;
-    color: #6A696B;
-    line-height: 2;
-    font-weight: 300;
-    margin-bottom: 2.8rem;
-}
+    font-size: 16px;
+    color: #2B2A2C;
+    font-weight: 400;
+    line-height: 24px;
 
-.about__content {
-    padding-left: 1rem;
-    margin-top: 2rem;
-}
-
-
-
-.about .about__photo {
-    position: relative;
-}
-
-
-.about .about__photo .img {
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-}
-
-
-.about__photo,
-.about__content {
-    width: 50%;
-}
-
-@media (max-width: 1199px) {
-    .about__bigtitle {
-        font-size: 4rem;
+    p {
+        margin-bottom: 10px;
     }
 
-    .about__title {
-        font-size: 2.5rem;
-    }
-}
-
-
-
-@media (max-width: 991px) {
-
-    .about {
-        margin: 4rem 0
-    }
-
-    .about__content {
-        order: 1;
-        padding-left: 0;
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto;
-        margin-bottom: 2rem;
-    }
-
-    .about .about__photo:before {
-        display: none;
-    }
-
-    .about .about__photo {
-        display: none;
-    }
-
-    .about__content {
-        width: 100%;
-    }
-}
-
-@media (max-width: 767px) {
-    .about__bigtitle {
-        font-size: 3rem;
-    }
-
-    .about__title {
-        font-size: 2rem;
+    span {
+        font-style: italic;
+        font-weight: 600;
     }
 }

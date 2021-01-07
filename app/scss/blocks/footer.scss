@@ -13,13 +13,18 @@
     font-weight: 700;
     color: #057faf;
     text-transform: uppercase;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .footer__subtitle {
     font-size: 18px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
+
+    span {
+        font-style: italic;
+        font-weight: 600;
+    }
 }
 
 .footer__box {
