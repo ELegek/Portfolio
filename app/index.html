@@ -8,6 +8,7 @@
   <title>Elegek.ru</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/77e8183332.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,9 +32,8 @@
         </div>
 
         <nav class="nav" id="nav">
-          <a class="nav__link" href="#">work</a>
+          <a class="nav__link" href="#">portfolio</a>
           <a class="nav__link" href="#">about me</a>
-          <a class="nav__link" href="#">blog</a>
           <a class="nav__link" href="#">contact</a>
           <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
         </nav>
@@ -42,13 +42,10 @@
           <div class="mobile__menu-sidebar">
             <nav class="mobile__menu">
               <div class="mobile__menu-box">
-                <a class="nav__link" href="#">work</a>
+                <a class="nav__link" href="#">portfolio</a>
               </div>
               <div class="mobile__menu-box second">
                 <a class="nav__link" href="#">about me</a>
-              </div>
-              <div class="mobile__menu-box third">
-                <a class="nav__link" href="#">blog</a>
               </div>
               <div class="mobile__menu-box fourth">
                 <a class="nav__link" href="#">contact</a>
@@ -78,12 +75,11 @@
           <div class="intro__text">A Front-end developer</div>
 
           <div class="social">
-            <a href="#" class="social__link"><img src="images/behance.svg" alt=""></a>
-            <a href="#" class="social__link"><img src="images/dribbble.svg" alt=""></a>
-            <a href="#" class="social__link"><img src="images/facebook.svg" alt=""></a>
-            <a href="#" class="social__link"><img src="images/in.svg" alt=""></a>
-            <a href="#" class="social__link"><img src="images/instagram.svg" alt=""></a>
-            <a href="#" class="social__link"><img src="images/twitter.svg" alt=""></a>
+            <a href="#" class="social__link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-vk"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
           </div>
 
           <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
@@ -99,12 +95,17 @@
   </section>
 
 
-  <!-- 
+
 
   <div class="works">
 
 
+
     <div class="container">
+
+      <div class="works__wrapper">
+        <h3 class="works__title">Portfolio</h3>
+      </div>
       <div class="works__nav">
         <a href="#" class="works__nav-link" data-filter="all">All</a>
         <a href="#" class="works__nav-link" data-filter="app">App</a>
@@ -217,9 +218,6 @@
           </div>
         </div>
       </div>
-      <div class="text-center">
-        <a href="#" class="btn btn--sm">load more work</a>
-      </div>
     </div>
   </div>
 
@@ -257,148 +255,41 @@
 
 
 
-  <div class="reviews">
-    <div class="container">
 
-      <div class="reviews__item">
-        <div class="reviews__text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, atque eos similique unde magni
-            rem cum id at reprehenderit minus, fuga enim amet quod commodi sint, totam rerum quibusdam
-            aperiam?</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe iure adipisci magni eaque
-            totam aperiam repudiandae ab molestiae, earum perferendis eum quia. Mollitia iure facere iusto
-            cupiditate, nihil fuga?</p>
-
-        </div>
-
-        <div class="reviews__author">
-          <img class="reviews__photo" src="https://placehold.it/103/333" alt="">
-          <div class="reviews__name">Edward M. Brooks</div>
-          <div class="reviews__company">Marketing House</div>
-          <div class="reviews__rating">
-            <img src="images/star.svg" width="13px" height="13px" alt="">
-            <img src="images/star.svg" width="13px" height="13px" alt="">
-            <img src="images/star.svg" width="13px" height="13px" alt="">
-            <img src="images/star.svg" width="13px" height="13px" alt="">
-            <img src="images/star-social-favorite-middle-full.svg" width="13px" height="13px" alt="">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <section class="news">
-    <div class="container">
-
-      <div class="news__header">
-        <h3 class="news__title">read me</h3>
-        <div class="news__text">Sometimes i write something smart</div>
-      </div>
-
-      <div class="articles">
-
-        <div class="articles__col">
-          <div class="articles__item">
-            <div class="articles__header">
-              <time class="articles__date">10<br>june</time>
-              <a href=""><img class="articles__photo" src="https://placehold.it/370x257" alt=""></a>
-            </div>
-            <div class="articles__content">
-              <h4 class="articles__title">
-                <a href="">TEN THE BEST APP IN 2017</a>
-              </h4>
-              <div class="articles__cat">CATEGORY </div>
-              <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
-                vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
-            </div>
-            <a href="#" class="btn btn--sm">READ MORE</a>
-          </div>
-        </div>
-
-        <div class="articles__col">
-          <div class="articles__item">
-            <div class="articles__header">
-              <time class="articles__date">10<br>june</time>
-              <a href=""><img class="articles__photo" src="https://placehold.it/370x257" alt=""></a>
-            </div>
-            <div class="articles__content">
-              <h4 class="articles__title">
-                <a href="">TEN THE BEST APP IN 2017</a>
-              </h4>
-              <div class="articles__cat">CATEGORY </div>
-              <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
-                vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
-            </div>
-            <a href="#" class="btn btn--sm">READ MORE</a>
-          </div>
-        </div>
-        <div class="articles__col">
-          <div class="articles__item">
-            <div class="articles__header">
-              <time class="articles__date">10<br>june</time>
-              <a href=""><img class="articles__photo" src="https://placehold.it/370x257" alt=""></a>
-            </div>
-            <div class="articles__content">
-              <h4 class="articles__title">
-                <a href="">TEN THE BEST APP IN 2017</a>
-              </h4>
-              <div class="articles__cat">CATEGORY </div>
-              <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
-                vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
-            </div>
-            <a href="#" class="btn btn--sm">READ MORE</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="news__footer">
-        <a class="news__link" href="#">See more posts</a>
-      </div>
-
-    </div>
-  </section>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__inner">
-        <div class="footer__credits">
-          <div class="footer__copyright">
-            &copy; 2019 UI43 - Free Templates
-          </div>
-          <div class="footer__social">
-            <a href="#" target="_blank">
-              <img src="images/behance.png" width="24px" alt="">
-            </a>
-            <a href="#" target="_blank">
-              <img src="images/dribbble.png" width="18px" alt="">
-            </a>
-            <a href="#" target="_blank">
-              <img src="images/in.png" width="18px" alt="">
-            </a>
-            <a href="#" target="_blank">
-              <img src="images/facebook.png" width="12px" alt="">
-            </a>
-            <a href="#" target="_blank">
-              <img src="images/instagram.png" width="18px" alt="">
-            </a>
-            <a href="#" target="_blank">
-              <img src="images/twitter.png" width="20px" alt="">
-            </a>
+      <div class="footer__wrapper">
+        <h3 class="footer__title">Contact me</h3>
+        <p class="footer__subtitle">If you want to talk, you can find me at:</p>
+      </div>
+
+      <div class="footer__box">
+        <p class="footer__email">evgeny.legek@yandex.ru</p>
+        <div class="footer__social">
+          <div class="social">
+            <a href="#" class="social__link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-vk"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
+      </div>
 
-        <nav class="footer__nav">
-          <a class="footer__nav-link" href="#">Work</a>
-          <a class="footer__nav-link" href="#">About me</a>
-          <a class="footer__nav-link" href="#">Blog</a>
-          <a class="footer__nav-link" href="#">Contact</a>
-          <a class="footer__nav-link footer__nav-link--btn" href="#">Hire me</a>
-        </nav>
+      <div class="footer__wrap">
+        <div class="user">
+          <div class="user__avatar">
+            <img src="https://placehold.it/100/333" alt="">
+          </div>
+          <div class="user__content">
+            <div class="user__name">Elegek</div>
+            <div class="user__prof">Front-end Developer</div>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__copy-text"><span>copyright © 2021,</span> Elegek</p>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -528,7 +419,7 @@
     </div>
   </div>
 
- -->
+
   <div class="modal" id="modal_resume">
     <div class="modal__dialog">
 

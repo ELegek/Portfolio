@@ -1,5 +1,6 @@
 .user {
-    display: flex
+    display: flex;
+    align-items: center;
 }
 
 .user__avatar {
@@ -16,7 +17,7 @@
 }
 
 .user__name {
-    margin-bottom: 3px;
+
     font-size: 1.04rem;
     line-height: 1.2rem;
     color: #2B2A2C;
@@ -25,6 +26,6 @@
 
 .user__prof {
     font-size: .8rem;
-    line-height: 1.4rem;
-    color: rgba(43, 42, 44, 0.7)
+    line-height: 1rem;
+    color: #057faf;
 }

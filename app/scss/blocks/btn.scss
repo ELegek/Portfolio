@@ -60,6 +60,18 @@
   }
 }
 
+@media (max-width: 800px) {
+  .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .btn+.btn {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 565px) {
   .btn {
     display: block;
@@ -69,17 +81,5 @@
   .btn+.btn {
     margin-left: 0;
     margin-top: 1rem
-  }
-}
-
-@media (max-width: 767px) {
-  .btn {
-    display: block;
-    width: 100%;
-  }
-
-  .btn+.btn {
-    margin-left: 0;
-    margin-top: 1rem;
   }
 }

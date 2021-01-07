@@ -1,14 +1,30 @@
 .social {
     display: flex;
-    margin-bottom: 42px
+    margin-bottom: 42px;
 }
 
 .social__link {
     margin-right: 10px;
     text-decoration: none;
-    transition: transform .2s linear
+    transition: all .3s linear;
+    border: 2px solid #057faf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+    i {
+        font-size: 1.7rem;
+    }
 }
 
 .social__link:hover {
-    transform: translateY(-5px)
+    background-color: #057faf;
+
+    i {
+        color: #fff;
+    }
 }
