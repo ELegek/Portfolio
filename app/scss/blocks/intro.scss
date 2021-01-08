@@ -1,5 +1,5 @@
 .intro {
-  margin-top: 100px
+  margin-top: 200px;
 }
 
 
@@ -54,13 +54,9 @@
 }
 
 @media (max-width: 991px) {
-  .intro__photo {
-    width: 350px;
-  }
+
 
   .intro__inner {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     background-size: 400px auto;
   }
 
@@ -68,9 +64,7 @@
 
 
 @media (max-width: 565px) {
-  .intro__photo {
-    display: none;
-  }
+
 
   .intro__content {
     width: 100%;
@@ -79,9 +73,7 @@
 
 @media (max-width: 800px) {
 
-  .intro {
-    margin-top: 200px;
-  }
+
 
   .intro__subtitle,
   .intro__title {
@@ -90,11 +82,7 @@
 }
 
 
-@media (max-width: 767px) {
-  .intro__photo {
-    display: none;
-  }
-}
+
 
 @media (max-width: 400px) {
 

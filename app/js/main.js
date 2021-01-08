@@ -40,6 +40,24 @@ $(function () {
   app()
 
 
+  // Плавный scroll
+
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+
+  anchors.forEach((item) => {
+    item.addEventListener('click', function (event) {
+      event.preventDefault();
+      const blockID = item.getAttribute('href')
+      document.querySelector('' + blockID).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      })
+    })
+  })
+
+
+
   /* Modal  
   =================*/
 
