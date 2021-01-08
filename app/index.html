@@ -32,8 +32,8 @@
         </div>
 
         <nav class="nav" id="nav">
-          <a class="nav__link" href="#">portfolio</a>
           <a class="nav__link" href="#">about me</a>
+          <a class="nav__link" href="#">portfolio</a>
           <a class="nav__link" href="#">contact</a>
           <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
         </nav>
@@ -41,11 +41,11 @@
         <div class="mobile__menu-wrapper">
           <div class="mobile__menu-sidebar">
             <nav class="mobile__menu">
-              <div class="mobile__menu-box">
-                <a class="nav__link" href="#">portfolio</a>
-              </div>
               <div class="mobile__menu-box second">
                 <a class="nav__link" href="#">about me</a>
+              </div>
+              <div class="mobile__menu-box">
+                <a class="nav__link" href="#">portfolio</a>
               </div>
               <div class="mobile__menu-box fourth">
                 <a class="nav__link" href="#">contact</a>
@@ -125,7 +125,7 @@
                 href="https://monster-book.com/javascript-i-jquery-interaktivnaya-veb-razrabotka">"JavsScript and
                 JQuery"</a>, <a
                 href="https://www.litres.ru/aditya-bhargava/grokaem-algoritmy-illustrirovannoe-posobie-dlya-p-39158380/?yclid=18174554154073611916&utm_medium=cpc&utm_source=yandex&utm_campaign=DSA_~402475360%7C47897814&utm_term=&utm_content=v2%7C%7C8331626511%7C%7C938794%7C%7C%7C%7C1%7C%7Cpremium%7C%7Cnone%7C%7Csearch%7C%7Cno&k50id=01000000938794_%D0%92%D1%81%D0%B5%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B">"Groping
-                Algorithms"</a>, and also reviewed countless videos on YouTube
+                Algorithms"</a>, and also reviewed countless videos on YouTube.
             </p>
             <p>Because we know the best way to learn is to practice, I also did a bunch of personal projects with the
               knowledge I gathered from the courses, you can check them on my <a href="#portfolio">portfolio</a>.</p>
@@ -154,17 +154,21 @@
         <h3 class="works__title">Portfolio</h3>
         <p class="about__subtitle">Check <span>what</span> I've been doing <span>lately</span></p>
       </div>
-      <div class="works__nav">
-        <a href="#" class="works__nav-link" data-filter="all">All</a>
-        <a href="#" class="works__nav-link" data-filter="app">App</a>
-        <a href="#" class="works__nav-link" data-filter="website">Website</a>
-        <a href="#" class="works__nav-link" data-filter="interaction">Interaction</a>
+
+
+      <div class="works__header">
+        <div class="filter">
+          <button class="filter__btn btn_type_all" data-filter='all'>All</button>
+          <button class="filter__btn btn_type_land" data-filter='land'>Landing</button>
+          <button class="filter__btn btn_type_store" data-filter='store'>Online store</button>
+          <button class="filter__btn btn_type_corporate" data-filter='corporate'>Corporate website</button>
+        </div>
       </div>
 
 
-      <div class="portfolio">
-        <div class="portfolio__col" data-cat="app">
+      <main class="portfolio">
 
+        <a href="#" class="card land">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -174,9 +178,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="portfolio__col" data-cat="website">
+        <a href="#" class="card store">
           <div class="work" data-modal="#modal_project_2">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -186,9 +190,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="portfolio__col" data-cat="interaction">
+        <a href="#" class="card land">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -198,8 +202,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio__col" data-cat="app">
+        </a>
+
+        <a href="#" class="card land">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -209,8 +214,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio__col" data-cat="website">
+        </a>
+
+        <a href="#" class="card corporate">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -220,8 +226,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio__col" data-cat="interaction">
+        </a>
+
+        <a href="#" class="card land">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -231,8 +238,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio__col" data-cat="app">
+        </a>
+
+        <a href="#" class="card store">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -242,8 +250,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio__col" data-cat="website">
+        </a>
+
+        <a href="#" class="card store">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -253,8 +262,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio__col" data-cat="interaction">
+        </a>
+
+        <a href="#" class="card land">
           <div class="work" data-modal="#modal_project_1">
             <img class="work__image" src="https://placehold.it/370x300" alt="">
             <div class="work__content">
@@ -264,8 +274,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </a>
+
+      </main>
     </div>
   </section>
 

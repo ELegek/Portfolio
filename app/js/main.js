@@ -3,28 +3,41 @@ $(function () {
 
   /* Filter 
   =================*/
-  let filter = $("[data-filter]");
+  function app() {
+    const buttons = document.querySelectorAll('.filter__btn');
+    const cards = document.querySelectorAll('.card');
 
-  filter.on("click", function (event) {
-    event.preventDefault();
-
-    let cat = $(this).data("filter");
-
-    if (cat == 'all') {
-      $("[data-cat]").removeClass('hide')
-    } else {
-      $("[data-cat]").each(function () {
-
-        let workCat = $(this).data('cat');
-
-        if (workCat != cat) {
-          $(this).addClass("hide");
+    function filter(category, items) {
+      items.forEach((item) => {
+        const isItemFiltered = !item.classList.contains(category);
+        const isShowAll = category.toLowerCase() === 'all'
+        if (isItemFiltered && !isShowAll) {
+          item.classList.add('anime')
         } else {
-          $(this).removeClass("hide");
+          item.classList.remove('hide')
+          item.classList.remove('anime')
         }
-      });
+      })
     }
-  });
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const currentCategory = button.dataset.filter
+        filter(currentCategory, cards)
+      })
+    })
+
+    cards.forEach((card) => {
+      card.ontransitionend = function () {
+        if (card.classList.contains('anime')) {
+          card.classList.add('hide')
+        }
+      }
+    })
+
+  }
+
+  app()
 
 
   /* Modal  
@@ -117,5 +130,6 @@ $(function () {
   document.querySelector('.header__burger').onclick = function () {
     document.querySelector('.header__burger-btn').classList.toggle('active');
     document.querySelector('.mobile__menu-wrapper').classList.toggle('active');
+    document.querySelector('body').classList.toggle('active');
   };
 });
