@@ -35,7 +35,7 @@
           <a class="nav__link" href="#about">about me</a>
           <a class="nav__link" href="#portfolio">portfolio</a>
           <a class="nav__link" href="#contact">contact</a>
-          <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+          <a class="btn popup-link" href="#hire__me">HIRE ME</a>
         </nav>
 
         <div class="mobile__menu-wrapper">
@@ -608,15 +608,9 @@
     </div>
   </div>
 
-  <div class="modal" id="modal_hire_me">
-    <div class="modal__dialog modal__dialog--sm">
-
-      <button class="modal__close" type="button" data-close>
-        <img src="images/modal-close.svg" alt="close">
-      </button>
-
-
-      <div class="contact">
+  <div class="popup" id="hire__me">
+    <div class="popup__body">
+      <div class="popup__content">
         <div class="contact__left">
           <h3 class="modal__title mb-0">LET'S TALK!</h3>
           <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
@@ -652,6 +646,7 @@
       </div>
     </div>
   </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
