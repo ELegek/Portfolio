@@ -26,35 +26,7 @@
   transform: translateY(-10%);
 }
 
-.btn__black {
-  margin-left: 15px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px 15px;
 
-  font-family: inherit;
-  color: #2B2A2C;
-  border: 1px solid #2B2A2C;
-  font-weight: 700;
-  line-height: 1.1;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 1.5px;
-  border-radius: 1.8em;
-  background: transparent;
-  cursor: pointer;
-  transition: all .2s linear;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:hover {
-    transform: translateY(-10%);
-  }
-}
 
 
 
