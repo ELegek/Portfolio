@@ -146,7 +146,7 @@ function popupOpen(curentPopup) {
     if (popupActive) {
       popupClose(popupActive, false);
     } else {
-      // bodyLock();
+      bodyLock();
     }
     curentPopup.classList.add('open');
     curentPopup.addEventListener('click', function (e) {
@@ -166,23 +166,23 @@ function popupClose(popupActive, doUnlock = true) {
   }
 }
 
-// function bodyLock() {
-//   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+function bodyLock() {
+  const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
-//   if (lockPadding.length > 0) {
-//     for (let i = 0; i < lockPadding.length; i++) {
-//       const el = lockPadding[i];
-//       el.style.paddingRight = lockPaddingValue;
-//     }
-//   }
-//   body.style.paddingRight = lockPaddingValue;
-//   body.classList.add('lock');
+  if (lockPadding.length > 0) {
+    for (let i = 0; i < lockPadding.length; i++) {
+      const el = lockPadding[i];
+      el.style.paddingRight = lockPaddingValue;
+    }
+  }
+  body.style.paddingRight = lockPaddingValue;
+  body.classList.add('lock');
 
-//   unlock = false;
-//   setTimeout(function () {
-//     unlock = true;
-//   }, timeout);
-// }
+  unlock = false;
+  setTimeout(function () {
+    unlock = true;
+  }, timeout);
+}
 
 function bodyUnLock() {
   setTimeout(function () {
