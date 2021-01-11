@@ -70,7 +70,37 @@
 }
 
 .project__technology {
+    text-align: center;
     color: #057faf;
     font-weight: 700;
     font-size: 16px;
+}
+
+
+@media (max-width: 980px) {
+    .modal-work__title {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .modal-work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-work__preview,
+    .modal-work__content {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+
+    .modal-work__title {
+        font-size: 1.5rem;
+    }
 }
