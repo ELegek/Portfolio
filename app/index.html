@@ -6,20 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Elegek.ru</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/77e8183332.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
 
-  <header class="header lock-padding">
+  <header class="header lock-padding animate__animated animate__fadeInDown animate__delay-1s">
     <div class="container">
       <div class="header__inner">
-        <a href="#intro" class="user">
+        <a href="#intro" class="user animate__animated animate__fadeInDown animate__delay-2s animate__faster">
           <div class="user__avatar">
-            <img src="https://placehold.it/57/333" alt="">
+            <img src="images/ava-small.jpg" alt="">
           </div>
           <div class="user__content">
             <div class="user__name">Elegek</div>
@@ -32,35 +33,39 @@
         </div>
 
         <nav class="nav" id="nav">
-          <a class="nav__link" href="#about">about me</a>
-          <a class="nav__link" href="#portfolio">portfolio</a>
-          <a class="nav__link" href="#contact">contact</a>
-          <a class="btn popup-link" href="#hire__me">HIRE ME</a>
+          <a class="nav__link animate__animated animate__fadeInDown animate__delay-2s animate__faster"
+            href="#about">about me</a>
+          <a class="nav__link animate__animated animate__fadeInDown animate__delay-2s animate__faster"
+            href="#portfolio">portfolio</a>
+          <a class="nav__link animate__animated animate__fadeInDown animate__delay-2s animate__faster"
+            href="#contact">contact</a>
+          <a class="btn popup-link animate__animated animate__fadeInDown animate__delay-2s animate__faster"
+            href="#hire__me">HIRE ME</a>
         </nav>
-
-        <div class="mobile__menu-wrapper">
-          <div class="mobile__menu-sidebar">
-            <nav class="mobile__menu">
-              <div class="mobile__menu-box second">
-                <a class="nav__link" href="#about">about me</a>
-              </div>
-              <div class="mobile__menu-box">
-                <a class="nav__link" href="#portfolio">portfolio</a>
-              </div>
-              <div class="mobile__menu-box fourth">
-                <a class="nav__link" href="#contact">contact</a>
-              </div>
-              <div class="mobile__menu-box fifth">
-                <a class="btn popup-link" href="#hire__me">HIRE ME</a>
-              </div>
-            </nav>
-          </div>
-        </div>
 
 
       </div>
     </div>
   </header>
+
+  <div class="mobile__menu-wrapper">
+    <div class="mobile__menu-sidebar">
+      <nav class="mobile__menu">
+        <div class="mobile__menu-box second">
+          <a class="nav__link" href="#about">about me</a>
+        </div>
+        <div class="mobile__menu-box">
+          <a class="nav__link" href="#portfolio">portfolio</a>
+        </div>
+        <div class="mobile__menu-box fourth">
+          <a class="nav__link" href="#contact">contact</a>
+        </div>
+        <div class="mobile__menu-box fifth">
+          <a class="btn--mobile popup-link" href="#hire__me">HIRE ME</a>
+        </div>
+      </nav>
+    </div>
+  </div>
 
 
 
@@ -70,19 +75,19 @@
 
       <div class="intro__inner">
         <div class="intro__content">
-          <h2 class="intro__subtitle">Hello <span>✌🏼</span>,</h2>
-          <h1 class="intro__title">I’m <span>Evgeny Lezhepekov</span></h1>
-          <div class="intro__text">A Front-end developer</div>
+          <h2 class="intro__subtitle wow fadeInLeft">Hello <span>✌🏼</span>,</h2>
+          <h1 class="intro__title wow fadeInLeft">I’m <span>Evgeny Lezhepekov</span></h1>
+          <div class="intro__text wow fadeInLeft">A Front-end developer</div>
 
           <div class="social">
-            <a href="#" class="social__link"><i class="fab fa-github"></i></a>
-            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social__link"><i class="fab fa-vk"></i></a>
-            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social__link wow fadeInUp" data-wow-delay=".5s"><i class="fab fa-github"></i></a>
+            <a href="#" class="social__link wow fadeInUp" data-wow-delay=".6s"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__link wow fadeInUp" data-wow-delay=".7s"><i class="fab fa-vk"></i></a>
+            <a href="#" class="social__link wow fadeInUp" data-wow-delay=".8s"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social__link wow fadeInUp" data-wow-delay=".9s"><i class="fab fa-linkedin-in"></i></a>
           </div>
 
-          <a class="btn popup-link" href="#hire__me">HIRE ME</a>
+          <a class="btn popup-link wow fadeIn" href="#hire__me" data-wow-delay="1s">HIRE ME</a>
         </div>
       </div>
 
@@ -167,7 +172,7 @@
 
       <main class="portfolio">
 
-        <a class="popup-link card land" href="#project">
+        <a href="#organic__food" class="popup-link card land">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/organic__food.jpg" alt="">
@@ -175,133 +180,133 @@
             <div class="work__content">
               <div class="work__cat">category: landing</div>
               <div class="work__title">Organic Food
-                <time class="work__date" datatime="2019-11-22">2020</time>
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card store">
+        <a href="#mavic__pro" class="popup-link card land">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/mavic.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: website</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: landing</div>
+              <div class="work__title">Mavic Pro
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card store">
+        <a href="#teplovizors" class="popup-link card store">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/teplovizors.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: interaction</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: store</div>
+              <div class="work__title">teplovizors
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card corporate">
+        <a href="#shanyrak" class="popup-link card corporate">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/shanyrak.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: app</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: corporate</div>
+              <div class="work__title">shanyrak
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card store">
+        <a href="#drive__moto" class="popup-link card store">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/drive__moto.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: website</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: store</div>
+              <div class="work__title">drive__moto
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card store">
+        <a href="#gosurf" class="popup-link card store">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/gosurf.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: interaction</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: landing</div>
+              <div class="work__title">GoSurf
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card land">
+        <a href="#mogo" class="popup-link card land">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/mogo.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: app</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: landing</div>
+              <div class="work__title">mogo
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card land">
+        <a href="#charger" class="popup-link card land">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/charger.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: website</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: landing</div>
+              <div class="work__title">charger
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card corporate">
+        <a href="#webworld" class="popup-link card corporate">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/webworld.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: interaction</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: corporate</div>
+              <div class="work__title">webworld
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="#" class="popup-link card store">
+        <a href="#miushi" class="popup-link card store">
           <div class="work">
             <div class="work__img-box">
               <img class="work__image" src="images/miushi.jpg" alt="">
             </div>
             <div class="work__content">
-              <div class="work__cat">category: interaction</div>
-              <div class="work__title">Project title
-                <time class="work__date" datatime="2019-11-22">2019</time>
+              <div class="work__cat">category: store</div>
+              <div class="work__title">miushi
+                <time class="work__date">2020</time>
               </div>
             </div>
           </div>
@@ -357,17 +362,13 @@
 
   <!-- popap work ====================== -->
   <div class="wrapper"></div>
-  <div class="popup" id="project">
+  <div class="popup" id="organic__food">
     <div class="popup__body">
       <div class="modal-work popup__content project__content">
 
         <div class="modal-work__preview">
-          <div data-slider="slider">
+          <img class="modal-work__photo" src="images/organic__food.jpg" alt="">
 
-            <div class="slider__item">
-              <img class="modal-work__photo" src="images/organic__food.jpg" alt="">
-            </div>
-          </div>
         </div>
 
         <div class="modal-work__content">
@@ -381,7 +382,7 @@
 
           <div class="modal-work__box">
             <h4 class="project__title">Description</h4>
-            <p class="project__description">Adaptive layout and animation of the artpresent website</p>
+            <p class="project__description">Adaptive layout and animation of the Organic Food website</p>
             <h4 class="project__title">Language/Technology</h4>
             <p class="project__technology">SASS - Flex - Grid - HTML5 - CSS3 - jQuery - JavaScript</p>
             <div class="btn-box">
@@ -401,8 +402,361 @@
     </div>
   </div>
 
+  <div class="popup" id="mavic__pro">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
 
-  <div class="wrapper"></div>
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/mavic.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">Mavic Pro</h3>
+            <div class="modal-work__info">
+              landing <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout of the Mavic Pro landing page</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript - FullPageJS - SlickJS</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="teplovizors">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/teplovizors.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">teplovizors</h3>
+            <div class="modal-work__info">
+              store <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout of the online store Teplovisors</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript - SlickJS - RangeSlider -
+              RateYo - FormStyler</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="shanyrak">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/shanyrak.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">shanyrak</h3>
+            <div class="modal-work__info">
+              corporate <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout and animation of the Shanyrak corporate website</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript - SlickJS</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="drive__moto">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/drive__moto.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">drive__moto</h3>
+            <div class="modal-work__info">
+              store <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout of the online store Drive Moto</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript - SlickJS - RangeSlider -
+              RateYo - FormStyler</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="gosurf">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/gosurf.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">gosurf</h3>
+            <div class="modal-work__info">
+              landing <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout and animation of the GoSurf website</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript - SlickJS</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="mogo">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/mogo.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">mogo</h3>
+            <div class="modal-work__info">
+              landing <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout of the Mogo website</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="charger">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/charger.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">charger</h3>
+            <div class="modal-work__info">
+              landing <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout of the Charger website</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript - SlickJS</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="webworld">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/webworld.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">webworld</h3>
+            <div class="modal-work__info">
+              corporate <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout and animation of the Webworld corporate website</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript - SlickJS - WowJS -
+              AnimateJS</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="miushi">
+    <div class="popup__body">
+      <div class="modal-work popup__content project__content">
+
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="images/miushi.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">miushi</h3>
+            <div class="modal-work__info">
+              store <span class="modal-work__info-divider">|</span> 2020
+            </div>
+          </div>
+
+          <div class="modal-work__box">
+            <h4 class="project__title">Description</h4>
+            <p class="project__description">Adaptive layout of the online store Miushi</p>
+            <h4 class="project__title">Language/Technology</h4>
+            <p class="project__technology">SASS - Flex - HTML5 - CSS3 - jQuery - JavaScript</p>
+            <div class="btn-box">
+              <a href="#" class="btn--visit">
+                <i class="fas fa-code"></i>
+                Visit
+              </a>
+              <a href="#" class="btn--git">
+                <i class="fab fa-github"></i>
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup Hire me -->
   <div class="popup" id="hire__me">
     <div class="popup__body">
       <div class="popup__content">
@@ -433,7 +787,7 @@
             </div>
 
             <div class="text-right">
-              <button class="btn" type="submit">send</button>
+              <button class="btn--send" type="submit">send</button>
             </div>
           </form>
         </div>
@@ -444,6 +798,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

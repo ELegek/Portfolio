@@ -1,5 +1,6 @@
 .modal-work {
-    display: flex
+    display: flex;
+    height: 500px;
 }
 
 .modal-work__preview {
@@ -88,6 +89,7 @@
     .modal-work {
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 
     .modal-work__preview,

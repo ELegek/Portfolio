@@ -1,3 +1,8 @@
+// WowJS
+new WOW().init();
+
+
+
 $(function () {
 
   // Menu burger
@@ -20,7 +25,10 @@ $(function () {
   });
 
 
+
+
 });
+
 
 
 
